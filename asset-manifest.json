@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/targon/static/css/main.6e8ae3d8.css",
+    "main.js": "/targon/static/js/main.920cbe59.js",
+    "index.html": "/targon/index.html",
+    "main.6e8ae3d8.css.map": "/targon/static/css/main.6e8ae3d8.css.map",
+    "main.920cbe59.js.map": "/targon/static/js/main.920cbe59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e8ae3d8.css",
+    "static/js/main.920cbe59.js"
+  ]
+}
