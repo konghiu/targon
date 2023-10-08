@@ -68,7 +68,7 @@ const SignIn = () => {
                 <Link to="/">forgot password?</Link>
             </span>
             <span className="text-sm underline float-right cursor-pointer">
-                <Link to="/sign/sign-on">sign on account?</Link>
+                <Link to="/targon/sign/sign-on">sign on account?</Link>
             </span>
         </form>
     );

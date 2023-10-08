@@ -13,18 +13,18 @@ import Blog from "../pages/blog/Blog";
 const IndexRouter = () => {
     return (
         <Routes>
-            <Route path="" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/shop" element={<Shop />} />
-            <Route path="/sign" element={<Sign />}>
+            <Route path="/targon/" element={<Home />} />
+            <Route path="/targon/home" element={<Home />} />
+            <Route path="/targon/blog" element={<Blog />} />
+            <Route path="/targon/shop" element={<Shop />} />
+            <Route path="/targon/sign" element={<Sign />}>
                 <Route path="" element={<SignIn />} />
                 <Route path="sign-in" element={<SignIn />} />
                 <Route path="sign-on" element={<SignOn />} />
                 <Route path="sign-out" element={<SignOut />} />
                 <Route path="sign-on/verify" element={<VerificationCode />} />
             </Route>
-            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/targon/portfolio" element={<Portfolio />} />
         </Routes>
     );
 };
