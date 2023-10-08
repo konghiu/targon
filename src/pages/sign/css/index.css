@@ -1,0 +1,35 @@
+.form__sign {
+    width: 400px;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.form__sign small,
+.form__sign input,
+.form__sign label {
+    display: block;
+    width: 100%;
+    color: var(--main-color);
+}
+.form__sign label::after {
+    content: "*";
+    margin-left: 0.25rem;
+    color: red;
+}
+
+.form__sign input {
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    border-radius: 0.5rem;
+    border: 1px solid var(--main-color);
+}
+
+.form__sign small {
+    color: red;
+}
+.form__sign .main__button {
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+}

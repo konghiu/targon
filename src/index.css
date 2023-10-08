@@ -1,13 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dddddd;
+    min-height: 100vh;
+}
+
+:root {
+    --main-color: rgb(0, 0, 142);
+}
+
+textarea,
+input {
+    outline: none;
+    border: none;
+}
+
+.text__main {
+    color: var(--main-color);
+}
+
+.main__with {
+    width: 1200px;
+    height: auto;
+}
+.input__search {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px, rgba(0, 0, 0, 0.1) 0px 3px 6px;
+}
+
+.main__button {
+    background-color: var(--main-color);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0.25rem 0;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid var(--main-color);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    transition: all 0.25s linear;
+}
+.main__button:hover {
+    background-color: white;
+    color: var(--main-color);
+}
+.paginate__button {
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    background-color: white;
+    color: var(--main-color);
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.paginate__button-click {
+    background-color: var(--main-color);
+    color: white;
 }

@@ -1,0 +1,93 @@
+.contentBlog,
+.contentBlog__comments,
+.asideBlog__blogs {
+    padding: 1rem 1.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+.asideBlog__blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.asideBlog__blog span:nth-child(2),
+.asideBlog__blog strong {
+    color: var(--main-color);
+}
+.asideBlog__blog strong,
+.asideBlog__blog span {
+    display: block;
+}
+.asideBlog__blog .asideBlog__blog-litmitLine {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+/* content */
+.contentBlog .contentBlog__content {
+    margin: 0.5rem 0;
+}
+.contentBlog .contentBlog__inputComments {
+    display: flex;
+    justify-content: space-between;
+}
+.contentBlog .contentBlog__inputComments textarea {
+    flex: 1;
+    height: 40px;
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+.contentBlog .contentBlog__inputComments button {
+    background-color: var(--main-color);
+    opacity: 0.6;
+    color: white;
+    padding: 0 1rem;
+    border-bottom-right-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important;
+}
+.contentBlog .contentBlog__inputComments button:hover {
+    opacity: 1;
+}
+
+/* comments */
+.contentBlog__comments {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contentBlog__comment {
+    position: relative;
+    padding: 0.25rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+.contentBlog__comment .comment__accessor {
+    font-size: 13px;
+    cursor: pointer;
+}
+.contentBlog__comment .comment__emoji {
+    position: absolute;
+    display: flex;
+    gap: 0.75rem;
+    width: fit-content;
+    height: auto;
+    top: calc(100% - 1rem);
+    right: 2rem;
+    background-color: white;
+    padding: 0 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    user-select: none;
+}
+
+.contentBlog__comment .comment__emoji div span:first-child {
+    margin-right: 0.25rem;
+}
+.contentBlog__comment .comment__emoji div span:last-child {
+    cursor: pointer;
+}

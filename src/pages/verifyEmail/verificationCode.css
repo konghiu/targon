@@ -1,0 +1,19 @@
+.verificationCode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.verificationCode h1 {
+    font-size: 32px;
+}
+.verificationCode input {
+    border-bottom: 2px solid var(--main-color);
+    padding: 1rem;
+    font-size: 40px;
+    width: 52px;
+    height: 50px;
+}
+.verificationCode .code {
+    display: flex;
+    gap: 1rem;
+}

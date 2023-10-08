@@ -1,0 +1,31 @@
+.product {
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.product .product__image {
+    transform: scale(0.8);
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 142, 0.4);
+    transition: all 0.5s ease;
+}
+.product .product__image img {
+    transform: scale(0.8);
+    transition: all 0.5s ease;
+}
+
+.product:hover .product__image {
+    background-color: rgba(0, 0, 142, 0.9);
+}
+.product:hover .product__image img {
+    transform: scale(1);
+}
+
+.product .product__button {
+    padding: 0 1rem 1rem;
+}
+.product .product__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 0.5rem;
+}

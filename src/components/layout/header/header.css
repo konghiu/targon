@@ -1,0 +1,7 @@
+/* skelete => section */
+.header {
+    color: var(--main-color);
+}
+.header > section {
+    margin: 0 auto;
+}

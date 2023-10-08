@@ -1,0 +1,37 @@
+.asideShop {
+    color: var(--main-color);
+}
+.asideShop__field {
+    padding: 1rem 1.5rem;
+    background-color: white;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+}
+
+.asideShop__field strong {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.asideShop__field ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.asideShop__field li {
+    padding: 0.5rem;
+    border: 1px solid var(--main-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.asideShop__field li:hover,
+.asideShop__field .asideShop__field-active {
+    background-color: var(--main-color);
+    color: white;
+}
+.asideShop__field .asideShop__field-active {
+    opacity: 1 !important;
+}
+.asideShop__field li:hover {
+    opacity: 0.4;
+}
